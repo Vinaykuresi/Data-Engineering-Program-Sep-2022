@@ -1,0 +1,65 @@
+
+variable : 
+    ex : num = 34
+
+Operators : 
+    1. Logical Operators : 
+        1) AND
+        2) OR 
+        3) NOT 
+
+        T - > True(Yes)
+        F - > False(No)
+        A   B   A and B
+        T   T   T
+        T   F   F
+        F   T   F
+        F   F   F
+
+        A   B   A or B
+        T   T   T
+        T   F   T
+        F   T   T
+        F   F   F
+
+        A       Not A
+        T          F
+        F          T
+    F or (Not T)   F
+    Not((Not T) and (Not F)) 
+    Not(F)
+    T
+
+    2. Arithematic Opeartors
+        Operators    Description
+        +           Add
+        -           Sub
+        *           Mul
+        /           Div
+        %           Modulo(Remainder)
+
+        BODMAS : 
+            B : Brackets
+            O : Power and Root
+            D and M : Div and Mul 
+            A and S : Add and Sub
+
+    3. Relational Operators
+        Operators   Description
+        ==          Equal to
+        <           Less than
+        >           Greater
+        <=          Less than equal to
+        >=          Greater than equal to
+        !=          Not equal to
+
+        T -> 1
+        F -> 0
+
+
+Assignment : 
+    5 + 4 * 9 % ( 3 + 1 ) / 6 - 1
+
+
+
+
