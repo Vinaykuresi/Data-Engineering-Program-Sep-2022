@@ -1,0 +1,8 @@
+
+Data : 
+    ex : 1. 1.0, "Vinay"
+    
+
+Assignment : 
+    Write a program to calculate 1) Area of a Right angle traingle 
+                                 2) Hypotenuse of Right angle traingle 
