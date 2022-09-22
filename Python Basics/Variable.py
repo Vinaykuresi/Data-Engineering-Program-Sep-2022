@@ -23,6 +23,7 @@ Traceback (most recent call last):
     Num
 NameError: name 'Num' is not defined
 >>> Num = 34
+
 >>> Num
 34
 >>> a = True

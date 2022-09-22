@@ -17,7 +17,12 @@ add()
 wt_limit = 30
 
 def baggage_check(baggage_wt):
+    # initialinzing the extra baggage charge with zero
     extra_baggage_charge = 0
+    """
+        checking whether the baggage weight is between
+        zero and the limit
+    """
     if not(baggage_wt >=0 and baggage_wt <= wt_limit):
         extra_baggage = baggage_wt - wt_limit
         extra_baggage_charge = extra_baggage * 100
@@ -30,5 +35,7 @@ def update_baggage_limit(new_baggage_limit):
 
 update_baggage_limit(15)
 print(baggage_check(45))
+
+
 
 

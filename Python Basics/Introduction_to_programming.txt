@@ -82,6 +82,17 @@ Assignment :
               4
 
 
+Coding Standards : 
+    ex : extra_baggage_weight = 45 -> snake case
+         extraBaggageWeight = 45 -> camel case 
+
+Execution Flow(Control Structures) : 
+    1) Seqeuntial
+    2) Selection
+    3) Iteration
+
+
+
         
 
 
