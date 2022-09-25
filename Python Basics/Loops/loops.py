@@ -35,4 +35,6 @@ TypeError: list indices must be integers or slices, not float
 range(0, 4)
 >>> list(range(4))
 [0, 1, 2, 3]
+>>> list(range(0))
+[]
 >>> 
