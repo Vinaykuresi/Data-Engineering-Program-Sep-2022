@@ -1,0 +1,46 @@
+
+Object oriented Programming :
+
+    <!-- phone scenario -->
+    <!-- class : Classification -->
+    Phone : 
+        <!-- data/properties/attributes -->
+        -- type ex : smart phone, feature phone
+        -- brand 
+        -- version
+        -- price
+        -- OS
+
+        <!-- behavior/operation -->
+        -- view_detials()
+        -- update_phone_price()
+        -- exchange_mobile()
+
+    <!-- Object : Samsung -->
+    Phone : 
+        <!-- data/properties/attributes -->
+        -- type ex : smart phone, feature phone
+        -- brand 
+        -- version
+        -- price = 25000
+        -- OS = "Andriod"
+
+        <!-- behavior/operation -->
+        -- view_detials()
+        -- update_phone_price()
+        -- exchange_mobile()
+
+    <!-- Object : Iphone-->
+    Phone : 
+        <!-- data/properties/attributes -->
+        -- type ex : smart phone, feature phone
+        -- brand 
+        -- version
+        -- price = 1,00,000
+        -- OS = "IPhone"
+
+        <!-- behavior/operation -->
+        -- view_detials()
+        -- update_phone_price()
+        -- exchange_mobile()
+
