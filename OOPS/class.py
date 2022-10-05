@@ -32,3 +32,10 @@ print(samsung.view_details())
 # print(samsung.price)
 # print(samsung.OS)
 
+"""
+1. Class Diagram for TV
+2. Create a class
+    a) Properties
+    b) Behaviors
+"""
+
