@@ -1,12 +1,22 @@
 
 class Phone:
+    # static variable
+    __discount = 0
+
     def __init__(self, price, OS, version):
         print("ID of self in Consturctor : ", id(self))
         self.__price = price
         self.OS = OS
         self.version = version
 
-    # Encapsulation
+    @staticmethod
+    def set_static_discount(value):
+        Phone.__discount = value
+
+    @staticmethod
+    def get_static_discount():
+        return Phone.__discount
+
     # setter
     def set_price(self, price):
         self.__price = price
@@ -18,25 +28,23 @@ class Phone:
 samsung = Phone(25000, "Samsung", "A12")
 iphone = Phone(100000, "IPhone", "11")
 
-samsung_details = samsung.view_details()
-print(samsung_details)
 
-print(samsung.version)
-samsung.version = "A11"
-print(samsung.version)
+Phone.set_static_discount(50)
 
-print(samsung.view_details())
-samsung.set_price(30000)
-print(samsung.view_details())
+discount = Phone.get_static_discount()
 
-# print(iphone.price)
-# print(samsung.price)
-# print(samsung.OS)
+print(discount)
 
-"""
-1. Class Diagram for TV
-2. Create a class
-    a) Properties
-    b) Behaviors
-"""
+# print(Phone.discount)
+
+# Phone.discount = 50
+
+# print(samsung.discount)
+
+# print(iphone.discount)
+
+
+'''
+    1) Write a program to count the number of Objects.
+'''
 

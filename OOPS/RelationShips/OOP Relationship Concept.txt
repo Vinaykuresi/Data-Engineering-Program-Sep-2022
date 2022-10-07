@@ -1,0 +1,56 @@
+
+OOP RelationShips : 
+    1. Inheritance
+    2. Aggregation
+    3. Composition
+
+1. Aggregation : 
+
+    Customer :
+    
+    class Customer : 
+        # properties
+        name
+        age
+        phone_no
+        address
+
+        # behaviors
+        __init__(name, age, phone_no)
+        view_details()
+        update_details()
+
+    Address : 
+
+    class Address : 
+        # properties
+        door_no
+        street_name
+        area 
+        pincode
+
+        # behaviors
+        __init__(door_no, street_name, area, pincode)
+        update_address()
+
+2. Inheritance : 
+
+    SmartPhone :                                                    Feature Phone : 
+
+    Class SmartPhone :                                              Class FeaturePhone :                        
+
+        # properties                                                       # properties
+        brand                                                               brand 
+        price                                                               price
+        camera                                                              camera
+        os                                                                  type
+        ram 
+        battery 
+
+        # behavior                                                          # behavior 
+        __init__(brand, price, camera, os, ram, battery)                    __init__(brand, price, camera, os, ram, battery)
+        buy()                                                               buy() 
+        view_details()                                                      view_details()
+        return()                                                            return()
+        insure()
+    
