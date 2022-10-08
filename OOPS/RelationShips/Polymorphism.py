@@ -1,8 +1,5 @@
 
-# multi level inheritance
-class Product : 
-    def type_product(self):
-        print("The products are related to Electronic Gadgets")
+# Polymorphism -> Poly : Many and Morphism : types
 
 class Phone:
 
@@ -24,21 +21,36 @@ class Phone:
 
 # heirarical Inheritance
 class FeaturePhone(Phone):
+    # method overiding
     def buy(self):
         print("Buying the Feature Phone") 
 
-# Multiple Inheritance
-class SmartPhone(Phone, Product):
+
+class SmartPhone(Phone):
+
+    # constructor Overiding
+    def __init__(self, os, ram):
+        self.os = os 
+        self.ram = ram
+        super().__init__("Samsung", 40000, "35px")
+
+
+    def view_details(self):
+        print([self.os, self.ram])
+
+    # method overiding
     def buy(self):
         print("Buying the Smart Phone") 
+        # super function
+        super().buy()
 
-# Phone("Apple", 100000, "45px").buy()
 
-smartPhone = SmartPhone("Andriod", 40000, "35px")
-smartPhone.view_details()
-# smartPhone.type_product()
+# smartPhone = SmartPhone("Andriod", 40000, "35px")
+smartPhone = SmartPhone("Andriod", "6 gb")
+# smartPhone.buy()
 
-# featurePhone = FeaturePhone("IPhone", 100000, "45px")
-# featurePhone.view_details()
+print(smartPhone.os)
+print(smartPhone.camera)
+
 
 
