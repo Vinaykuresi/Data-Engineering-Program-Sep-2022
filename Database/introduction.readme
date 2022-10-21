@@ -112,6 +112,20 @@ Data Integrity and Constraints :
         3) Referential Integrity : 
             ex : FOREIGN KEY
 
+    Constraint Type : 
+
+        Single Column Constraint        Single Column
+        Composite Constraint            Multiple Column
+
+        Various Constraints : 
+
+            1) NOT NULL
+            2) PRIMARY KEY 
+            3) CHECK 
+            4) UNIQUE 
+            5) FOREIGN KEY 
+            6) DEFAULT 
+
 Candidate Key : 
 
 Primary key : 
@@ -278,7 +292,47 @@ Alternate Name      CHARACTER(n)            CHARACTER VARYING(n)
             Less than           <=                  15 <= 5         false
             or equal to
 
+    Logical Operator : 
 
+            1) Comparision Operator : 
+
+            Operator        Symbol          Usage               Example 
+            Range           BETWEEN         matches
+                                            a values between    salary BETWEEN 2000 and 3000
+                                            a range of value    
+
+            List            IN              Matches any of the  Country IN ("IND, "USA", "UK")
+                        (List of values)    list of values
+
+        String pattren      LIKE            Matches a character Percentage LIKE "10%"   
+        matching                            pattren
+
+        NULL Test           IS NULL         is a NULL value       BONUS IS NULL  
+
+           2) Logical Operator : 
+
+            Operator        Symbol          Usage               Example 
+            And             AND             both conditions     salary >= 3000 and Dept = "MNG"
+                                            are true 
+            Or              OR              either one of the   salary >= 3000 or Dept = "MNG"
+                                            condition is true 
+
+            Not             NOT             returns true if the Id NOT in(2, 3) 
+                                            condition is false 
+
+    Expressions : 
+
+        1) Constant Values 
+        2) Operators
+        3) Brackets 
+
+        SELECT and WHERE 
+
+        BODMAS rule
+
+        3 + 4 * 5 * ( 9 - 7 ) = 43
+
+        3 + 4 * 5 * 9 - 7 = 176
 
 
 
