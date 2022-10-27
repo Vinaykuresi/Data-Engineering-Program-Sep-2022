@@ -335,5 +335,54 @@ Alternate Name      CHARACTER(n)            CHARACTER VARYING(n)
         3 + 4 * 5 * 9 - 7 = 176
 
 
+    Like Operator : 
+
+        match string pattren.
+        Two wild cards : 
+
+            1) '%' -> matches any number of characters
+            2) '_' -> matches only one character
+
+    Order of Query Execution : 
+
+        FJWGHSDO -> 
+
+            F -> From 
+            J -> Join 
+            W -> Where 
+            G -> Group By 
+            H -> Having 
+            S -> Select 
+            D -> Distinct 
+            O -> Order By 
+
+
+    Assignment : 
+
+        ProductId
+        PDescription
+        Price 
+        Category
+        Discount
+
+        1)  display -> pid, desc, cat, dis -> dis more than 5%.
+        2)  display -> pid, desc, cat, dis -> desc = null.
+
+    Function : 
+
+        1) Numeric Function 
+        2) Character Function 
+        3) Conversion Function 
+        4) Date Function 
+        5) Aggregation Function 
+
+                ex : SUM(total), AVG(average)
+                     MIN(lowest value), MAX(highest value), COUNT(number of rows) considers NULL, ex :  COUNT(*)
+
+
+
+
+
+
 
         
