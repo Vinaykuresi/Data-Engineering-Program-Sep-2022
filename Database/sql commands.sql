@@ -115,8 +115,6 @@ select StudentId, Fname from Student where StudentId not in (1001, 1003, 1005);
 
 select StudentId, Fname from Student where Gender is not Null;
 
-select * from Student;
-
 select * from Student where Fname like "S%";
 select * from Student where Fname like "%es%";
 
@@ -127,6 +125,10 @@ select * from Student where Fname like '_a%';
 select * from Student where DOJ = '1992-11-05' or DOJ = '1993-03-23';
 
 select min(StudentId) as FirstStudentId, max(StudentId) as LastStudentId from Student;
+
+
+
+
 
 
 
