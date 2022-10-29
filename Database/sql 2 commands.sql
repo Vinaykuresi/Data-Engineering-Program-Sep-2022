@@ -70,8 +70,16 @@ values(1006, "Tirupati, AP");
  where Fname = null;
  
  -- IS NULL
-  select 
+ select 
  StudentId, Address
  from Student
  where Fname is null;
+ 
+ -- character selection
+ select
+ *
+ from Student
+ where DOJ like "1994%";
+ 
+ 
  

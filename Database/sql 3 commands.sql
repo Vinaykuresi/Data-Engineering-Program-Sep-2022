@@ -1,17 +1,31 @@
 -- Numeric Functions
+select * from Student;
+
+alter table Student Add Price integer;
+
+update Student set Price = 35000 where StudentId = 1004;
+update Student set Price = 25000 where StudentId = 1005;
+update Student set Price = 50000 where StudentId = 1006;
+
 -- absolute function
 select abs(-12);
 
-select * from Student;
-
 -- avg function
-select avg(StudentId) as AveragePrice from Student;
+select avg(Price) as AverageFees from Student;
 
 -- count function
 select count(StudentId) As NumberOfStudents from Student; 
 
 -- sum function
-select sum(StudentId) as TotalPrice from Student;
+select sum(Price) as TotalPrice from Student;
+
+-- max function
+select max(Price) as TotalPrice from Student;
+
+-- min function
+select min(Price) as TotalPrice from Student;
+
+select max(Price) as MaxPrice,  min(Price) as MinPrice from Student;
 
 -- Character Function
 

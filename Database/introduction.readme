@@ -382,6 +382,25 @@ Alternate Name      CHARACTER(n)            CHARACTER VARYING(n)
                      MIN(lowest value), MAX(highest value), COUNT(number of rows) considers NULL, ex :  COUNT(*)
 
 
+    Joins : 
+
+        1) Inner Join 
+            -> A and B
+        2) Self join 
+            -> A and A
+        3) Left Outer Join 
+            -> A and B : Entire Table A + Integrated part of A and B
+        4) Right Outer JOin 
+            -> A and B : Entire Table B + + Integrated part of A and B
+        5) Full Outer JOin 
+            -> A and B : Both tables and B
+
+
+        Cross Join : 
+
+            Cartesian Product. 
+            m rows(A) x n rows(B) -> m * n rows
+
 
 
 
