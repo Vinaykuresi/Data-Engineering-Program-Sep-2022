@@ -1,18 +1,71 @@
--- order by
-select StudentId, Fname as FullName from Student order by studentId asc; 
 
-select StudentId, Fname as FullName from Student order by studentId desc; 
+use School;
+-- selects all records from tabl3e-- 
+select
+*
+from Student;
+
+-- order by
+select 
+StudentId, Fname as FullName 
+from Student 
+order by studentId asc; 
+
+select 
+StudentId, Fname as FullName 
+from Student 
+order by 2; 
+
+select
+*
+from Student
+where StudentId < 1004
+order by Fname asc;
+
+
+select 
+StudentId, Fname as FullName 
+from Student 
+order by studentId desc; 
 
 select 
 StudentId, Fname as FullName 
 from Student 
 order by Fname asc, studentId desc;
 
+select 
+*
+from Student;
+
+select 
+StudentId, Fname as FullName 
+from Student;
+
 -- group by
 select 
 Address, count(StudentId) as TotalStudents
 from Student
 group by Address;
+
+select 
+Dept, sum(price)
+from Student
+group by Dept;
+
+select 
+Dept, count(StudentId) as total_no_students
+from Student
+group by Dept;
+
+select 
+Dept, Branch, Max(Price) 
+from Student
+group by Dept, Branch;
+
+select 
+Dept, max(Price), min(Price)
+from Student 
+group by Dept;
 
 select 
 Dept, Branch, Max(Price) 
