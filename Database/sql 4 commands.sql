@@ -122,14 +122,7 @@ INSERT INTO Computer values("Lenevo", 1004, "Horizon", 2019);
 INSERT INTO Computer values("Asus", 1005, "Vivobook", 2018);
 INSERT INTO Computer values("Asus", 1006, "Zenbook", 2020);
 
-select * from Computer;
-
--- cross join as Cartesian Product
-
-select 
-S.StudentId, S.Fname as FirstName, S.StudentId, C.StudentId as Comp_alloc_stud, C.Model
-from Student S 
-cross join Computer C;   
+ 
 
 
 
